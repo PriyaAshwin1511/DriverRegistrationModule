@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="helper-service" />
+        <module name="discovery-server" />
+        <module name="location-service" />
+        <module name="api-gateway" />
+        <module name="registration-service" />
+        <module name="background-verification-service" />
+        <module name="driver-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-service" target="1.8" />
+      <module name="driver-service-test" target="1.8" />
+      <module name="test1" target="1.8" />
+      <module name="util-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="background-verification-service" options="-parameters" />
+      <module name="common-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="driver-registration-module" options="" />
+      <module name="driver-service" options="-parameters" />
+      <module name="driver-service-test" options="-parameters" />
+      <module name="helper-service" options="-parameters" />
+      <module name="location-service" options="-parameters" />
+      <module name="registration-service" options="-parameters" />
+      <module name="test1" options="-parameters" />
+      <module name="util-service" options="-parameters" />
+    </option>
+  </component>
+</project>
